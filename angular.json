@@ -136,6 +136,68 @@
           }
         }
       }
+    },
+    "@ia-libraries/ia-core": {
+      "projectType": "library",
+      "root": "projects/ia-libraries/ia-core",
+      "sourceRoot": "projects/ia-libraries/ia-core/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ia-libraries/ia-core/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ia-libraries/ia-core/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ia-libraries/ia-core/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ia-libraries/ia-core/src/test.ts",
+            "tsConfig": "projects/ia-libraries/ia-core/tsconfig.spec.json",
+            "karmaConfig": "projects/ia-libraries/ia-core/karma.conf.js"
+          }
+        }
+      }
+    },
+    "@ia-libraries/ia-api-services": {
+      "projectType": "library",
+      "root": "projects/ia-libraries/ia-api-services",
+      "sourceRoot": "projects/ia-libraries/ia-api-services/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ia-libraries/ia-api-services/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ia-libraries/ia-api-services/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ia-libraries/ia-api-services/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ia-libraries/ia-api-services/src/test.ts",
+            "tsConfig": "projects/ia-libraries/ia-api-services/tsconfig.spec.json",
+            "karmaConfig": "projects/ia-libraries/ia-api-services/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "ia-app"

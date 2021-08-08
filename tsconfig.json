@@ -3,6 +3,14 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
+      "@ia-libraries/ia-api-services": [
+        "dist/ia-libraries/ia-api-services/ia-libraries-ia-api-services",
+        "dist/ia-libraries/ia-api-services"
+      ],
+      "@ia-libraries/ia-core": [
+        "dist/ia-libraries/ia-core/ia-libraries-ia-core",
+        "dist/ia-libraries/ia-core"
+      ],
       "@ia-libraries/ia-shared": [
         "dist/ia-libraries/ia-shared/ia-libraries-ia-shared",
         "dist/ia-libraries/ia-shared"
