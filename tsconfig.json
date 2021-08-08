@@ -2,6 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@ia-libraries/ia-shared": [
+        "dist/ia-libraries/ia-shared/ia-libraries-ia-shared",
+        "dist/ia-libraries/ia-shared"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
